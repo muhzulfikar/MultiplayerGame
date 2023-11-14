@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 867226c4ff7649d4fa4a1e7dfdc78835, type: 2}
+  - {fileID: 2100000, guid: 45c2fe6e284721249ba7b58f42dea89d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,7 +144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e054df7fe20dcd241b757ce007d6674f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 7743508618186946130}
   - component: {fileID: 372806293728016495}
   - component: {fileID: 3279410873305093222}
+  - component: {fileID: 2939105308289496380}
   m_Layer: 0
   m_Name: Network Player
   m_TagString: Untagged
@@ -344,6 +345,7 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 7743508618186946130}
   - {fileID: 3279410873305093222}
+  - {fileID: 2939105308289496380}
   SimulationBehaviours: []
 --- !u!114 &7743508618186946130
 MonoBehaviour:
@@ -358,6 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
+  _inputHandler: {fileID: 2939105308289496380}
   _characterController: {fileID: 3279410873305093222}
   _visuals:
   - {fileID: 6283842532212021861}
@@ -418,3 +421,17 @@ MonoBehaviour:
   rotationSpeed: 15
   _IsGrounded: 0
   _Velocity: {x: 0, y: 0, z: 0}
+--- !u!114 &2939105308289496380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2920512903944241692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd7268b5e2c30f4b9020272fe9539b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  _mouseSensitivity: 10
